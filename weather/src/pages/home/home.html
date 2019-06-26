@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+   
+    
+  <div style ="background:linear-gradient(rgba(255, 254, 254, 0.479),rgba(247, 245, 245, 0),rgba(85, 174, 247, 0)),url(https://images.pexels.com/photos/1227520/pexels-photo-1227520.jpeg?auto=format%2Ccompress&cs=tinysrgb&h=750&w=1260);width:100%vw;height:100%;
+  background-position-x: 40%;" >
+  <div class="flex-container">
+      <div style="flex-grow: 8"><input type = "text" placeholder="ENTER A PLACE..." style = "border-radius:20px;width: 300px;height: 30px;background: rgba(140, 183, 248, 0.459)" [(ngModel)]="sho.search"/></div>
+      <div style="flex-grow: 2"><button style = "color:whitesmoke;border-radius:20px;width: 100px;height: 30px;background: rgba(156, 193, 247, 0.979);border-style:outset;border-width:2px" (click) = "save()">SEARCH</button></div>
+      
+    </div>
+<div style = "margin-bottom: 120px;" align = "center">
+
+  <img src="https://www.sccpre.cat/mypng/full/25-257717_partly-sunny-d-thats-all-folks-gif-big.png" align ="center" width = 200px;>
+  <br>
+  <h2 style ="color: black">{{iweatherID}} </h2>
+  <h3 style ="color: black">{{temp}}°C </h3>
+</div>
+
+  <div>
+ <ion-grid>
+   <ion-row>
+<ion-col style ="color: azure;">
+
+  
+  <table width = "390px" height ="10px" >
+ <tr style= "border-top: 0px;border-left: 0px;border-right: 0px;border-bottom: 1px;border-style:inset;border-bottom-color: rgba(255, 255, 255, 0.466);height:35px;"><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{iweatherID}}</td></tr>
+ <tr style= "border-top: 0px;border-left: 0px;border-right: 0px;border-bottom: 1px;border-style:inset;border-bottom-color: rgba(255, 255, 255, 0.466);height:35px"><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Temperature:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{temp}}°C</td></tr>
+ <tr style= "border-top: 0px;border-left: 0px;border-right: 0px;border-bottom: 1px;border-style:inset;border-bottom-color: rgba(255, 255, 255, 0.466);height:35px"> <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Humidity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{humidity}}(g/m3)</td></tr>
+ <tr style= "border-top: 0px;border-left: 0px;border-right: 0px;border-bottom: 1px;border-style:inset;border-bottom-color: rgba(255, 255, 255, 0.466);height:35px"><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Windspeed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{speed}} knots </td></tr>
+</table>
+</ion-col>
+   </ion-row>
+ </ion-grid>
+ </div>
+  </div>
+</ion-content>
